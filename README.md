@@ -201,9 +201,17 @@ Host (Room Master) ───[ sendSpawnSeed(seed: 0x7F4A, timestamp: 1725000000)
   1. **Key Generation**: On first launch, the client generates an **X25519** elliptic-curve key-pair. The private key is committed directly into the Android Keystore / iOS Keychain via `flutter_secure_storage`.
   2. **Public Key Exchange**: The public key is published to the public player profile table in Supabase.
   3. **Shared Secret Derivation**: When opening a conversation with a friend, both clients derive a matching symmetric key using Diffie-Hellman:
-     $$\text{SharedSecret} = \text{X25519}(\text{PrivateKey}_{\text{self}}, \text{PublicKey}_{\text{peer}})$$
+
+$$
+\text{SharedSecret} = \text{X25519}(\text{PrivateKey}_{\text{self}}, \text{PublicKey}_{\text{peer}})
+$$
+
   4. **Authenticated Payload Encryption**: Every message is encrypted using **AES-256-GCM** with a unique 96-bit initialization vector (nonce):
-     $$\text{Ciphertext}, \text{AuthTag} = \text{AES-GCM-256}(\text{Message}, \text{SharedSecret}, \text{Nonce})$$
+
+$$
+\text{Ciphertext}, \text{AuthTag} = \text{AES-GCM-256}(\text{Message}, \text{SharedSecret}, \text{Nonce})
+$$
+
   5. **Zero Cloud Visibility**: The Supabase database and WebSocket relay only handle ciphertext and auth tags; plaintexts never exist on any server.
 
 ### 4. Native Low-Latency Audio Architecture (Dart FFI & SoLoud)
@@ -224,7 +232,10 @@ Host (Room Master) ───[ sendSpawnSeed(seed: 0x7F4A, timestamp: 1725000000)
 * Designed a mathematical time-delta progression system (`GrowthPipsEngine`):
   - Instead of keeping a battery-draining background daemon running, the game records verified server/device timestamps upon exit.
   - When resumed, the engine calculates elapsed real-world time, applies non-linear decay curves to tank cleanliness and fish hunger, and awards earned growth pips:
-  $$\text{Progress} = \min\left(1.0, \frac{\text{CurrentPips}}{\text{MaturityThreshold}}\right)$$
+
+$$
+\text{Progress} = \min\left(1.0, \frac{\text{CurrentPips}}{\text{MaturityThreshold}}\right)
+$$
 
 ---
 
