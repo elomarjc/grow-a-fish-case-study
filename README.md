@@ -1,4 +1,4 @@
-# 🐠 Grow A Fish — Engineering Case Study & Architecture Overview
+# 🐠 Grow A Fish
 
 <div align="center">
 
