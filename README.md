@@ -1,20 +1,20 @@
-# 🐠 Grow A Fish
+# Grow A Fish
 
-<div align="center">
+<p align="center">
+  <img src="assets/icon.png" alt="Grow A Fish Icon" width="130" style="border-radius: 24px;" />
+</p>
 
-<img src="assets/icon.png" alt="Grow A Fish Icon" width="120" height="120" style="border-radius: 24px;" />
+<p align="center">
+  <a href="https://play.google.com/store/apps/details?id=com.elomarstudio.growafish"><img src="https://img.shields.io/badge/Google_Play-Grow_A_Fish-34A853?style=for-the-badge&logo=google-play&logoColor=white" alt="Google Play" /></a>
+  <a href="https://play.google.com/store/apps/details?id=com.elomarstudio.growafish"><img src="https://img.shields.io/badge/Platform-Android_%7C_iOS-blue?style=for-the-badge&logo=android" alt="Platform" /></a>
+  <a href="https://flutter.dev"><img src="https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" /></a>
+  <a href="https://flame-engine.org"><img src="https://img.shields.io/badge/Flame_Engine-2D_Gaming-FF6F00?style=for-the-badge" alt="Flame" /></a>
+  <a href="https://github.com/elomarjc"><img src="https://img.shields.io/badge/E2EE-X25519_%2B_AES--256--GCM-green?style=for-the-badge&logo=shield" alt="Security" /></a>
+</p>
 
-[![Google Play](https://img.shields.io/badge/Google_Play-Grow_A_Fish-34A853?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.elomarstudio.growafish)
-[![Platform](https://img.shields.io/badge/Platform-Android_%7C_iOS-blue?style=for-the-badge&logo=android)](https://play.google.com/store/apps/details?id=com.elomarstudio.growafish)
-[![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
-[![Flame](https://img.shields.io/badge/Flame_Engine-2D_Gaming-FF6F00?style=for-the-badge)](https://flame-engine.org)
-[![Security](https://img.shields.io/badge/E2EE-X25519_%2B_AES--256--GCM-green?style=for-the-badge&logo=shield)](https://github.com/elomarjc)
+A production cross-platform virtual pet simulator and real-time multiplayer arcade ecosystem published on Google Play.
 
-<br/>
-
-**A Production Cross-Platform Virtual Pet Simulator & Real-Time Multiplayer Arcade Ecosystem**
-
-</div>
+**Developed by [Jacob El-Omar](https://github.com/elomarjc)**
 
 ---
 
@@ -24,7 +24,7 @@
 
 ---
 
-## 🎮 Game Overview
+## Game Overview
 
 **Grow A Fish** is a full-featured mobile game published on Google Play that blends the relaxed progression of an aquarium virtual-pet simulator with the competitive engagement of multi-genre arcade minigames, social tank visits, and real-time multiplayer competitions.
 
@@ -64,35 +64,20 @@
 
 ---
 
-## 📱 Gameplay Showcase
+## Gameplay Showcase
 
 <div align="center">
 
-| 01. Main Aquarium Simulation | 02. Match-3 Campaign |
+| 01. Main Aquarium Simulation | 02. Multi-Genre Arcade Minigames |
 | :---: | :---: |
-| <img src="assets/screenshots/01_main_gameplay.jpeg" width="380" alt="Main Aquarium Gameplay" /> | <img src="assets/screenshots/02_match_puzzle_gameplay.jpeg" width="380" alt="Match-3 Campaign Gameplay" /> |
-| *Real-time physics-driven aquarium ecosystem, feeding & health management* | *Campaign progression with cascading board solver and objective BLoC* |
-
-| 03. Global Navigation & Hub | 04. Multi-Genre Arcade Minigames |
-| :---: | :---: |
-| <img src="assets/screenshots/03_navigation_gameplay.jpeg" width="380" alt="Navigation & World Selection" /> | <img src="assets/screenshots/04_mini_games.jpeg" width="380" alt="Minigames Selection" /> |
-| *Intuitive navigation hub connecting aquarium, hatchery, and social zones* | *Honeycomb selector for Parkour, Survivor, Ninja, Flap, and Hook games* |
-
-| 05. Level Progression & Campaign | 06. Battle Pass & Reward Tracks |
-| :---: | :---: |
-| <img src="assets/screenshots/05_level_progression.jpeg" width="380" alt="Level Progression" /> | <img src="assets/screenshots/06_rewards_battle_pass.jpeg" width="380" alt="Battle Pass & Season Rewards" /> |
-| *Dynamic level unlocking, stage milestones, and difficulty scaling* | *Seasonal reward tracks, crate opening loot tables, and currency vaults* |
-
-| 07. Seasonal Events & Hatchery | 08. Social Hub & Leaderboards |
-| :---: | :---: |
-| <img src="assets/screenshots/07_seasonal_events.jpeg" width="380" alt="Seasonal Events" /> | <img src="assets/screenshots/08_social_features.jpeg" width="380" alt="Social Features & Leaderboards" /> |
-| *Timed holiday events, rare potion crafting, and exotic fish species* | *Global leaderboards, tank heists, friend gifts, and E2EE encrypted chat* |
+| <img src="assets/screenshots/01_main_gameplay.jpeg" width="380" alt="Main Aquarium Gameplay" /> | <img src="assets/screenshots/04_mini_games.jpeg" width="380" alt="Minigames Selection" /> |
+| *Real-time physics-driven aquarium ecosystem, feeding, and health management* | *Honeycomb selector for Parkour, Survivor, Ninja, Flap, and Hook games* |
 
 </div>
 
 ---
 
-## 👨‍💻 My Role
+## Role and Responsibilities
 
 As the **creator, solo architect, and lead software engineer**, I conceived, designed, and engineered the application from scratch:
 * **Engine & Game Architecture**: Designed a modular game architecture spanning 330+ Dart modules, combining Flutter UI with Flame and Bonfire 2D game loops.
@@ -104,7 +89,7 @@ As the **creator, solo architect, and lead software engineer**, I conceived, des
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Category | Technology | Purpose & Implementation |
 | :--- | :--- | :--- |
@@ -120,7 +105,7 @@ As the **creator, solo architect, and lead software engineer**, I conceived, des
 
 ---
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
 The application adopts a decoupled, event-driven layered architecture separating real-time game loops from presentation logic, cryptographic services, and network layers:
 
@@ -168,7 +153,7 @@ flowchart TD
 
 ---
 
-## ⚙️ Deep-Dive Systems & Technical Highlights
+## Systems and Technical Highlights
 
 ### 1. Deterministic Seed-Synchronized Multiplayer
 * **The Problem**: Mobile cellular networks suffer from high packet jitter and intermittent packet loss. Continuously streaming player coordinates and obstacle positions in real time leads to rubber-banding and high cloud bandwidth costs.
@@ -236,7 +221,7 @@ $$
 
 ---
 
-## ⚡ Performance & Mobile Optimizations
+## Performance and Mobile Optimizations
 
 1. **Zero Garbage Collection Audio**: Audio triggers bypass the Dart VM garbage collector by leveraging C++ memory pools via FFI.
 2. **Chunked Viewport Culling**: In platformer and survivor modes, game components outside the visible screen matrix are culled from physics calculations and rendering loops.
@@ -245,7 +230,7 @@ $$
 
 ---
 
-## 🏆 Key Engineering Challenges & Solutions
+## Key Engineering Challenges and Solutions
 
 | Challenge | Root Cause | Engineering Solution |
 | :--- | :--- | :--- |
@@ -256,7 +241,7 @@ $$
 
 ---
 
-## 💡 What I Learned
+## Engineering Takeaways
 
 * **Game Engine Architecture in Flutter**: Deepened practical expertise in integrating real-time game engines (Flame, Bonfire) inside declarative reactive UI frameworks.
 * **Applied Cryptography**: Hands-on mastery of asynchronous elliptic-curve Diffie-Hellman key management, secure key isolation in OS hardware security modules (Keystore/Keychain), and authenticated symmetric encryption.
@@ -265,7 +250,7 @@ $$
 
 ---
 
-## 🔒 Source Code Confidentiality Notice
+## Source Code Confidentiality Notice
 
 The full production source code for **Grow A Fish** is proprietary intellectual property belonging to El-Omar Studio and remains in a private GitHub repository. 
 
