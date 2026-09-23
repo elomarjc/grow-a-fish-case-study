@@ -4,8 +4,6 @@
 
 <img src="assets/icon.png" alt="Grow A Fish Icon" width="120" height="120" style="border-radius: 24px;" />
 
-**A Production Cross-Platform Virtual Pet Simulator & Real-Time Multiplayer Arcade Ecosystem**
-
 [![Google Play](https://img.shields.io/badge/Google_Play-Grow_A_Fish-34A853?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.elomarstudio.growafish)
 [![Platform](https://img.shields.io/badge/Platform-Android_%7C_iOS-blue?style=for-the-badge&logo=android)](https://play.google.com/store/apps/details?id=com.elomarstudio.growafish)
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
@@ -15,6 +13,8 @@
 <br/>
 
 [🎮 **Play Grow a Fish on Google Play**](https://play.google.com/store/apps/details?id=com.elomarstudio.growafish) • [🌐 **Official Website**](https://growafish.org)
+
+**A Production Cross-Platform Virtual Pet Simulator & Real-Time Multiplayer Arcade Ecosystem**
 
 </div>
 
