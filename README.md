@@ -15,7 +15,7 @@
 
 A production cross-platform virtual pet simulator and real-time multiplayer arcade ecosystem published on Google Play.
 
-**Architected, engineered, and shipped by [Jacob El-Omar](https://github.com/elomarjc)**
+**Developed by [J2KJonas](https://github.com/J2KJonas) and [elomarjc](https://github.com/elomarjc)**
 
 ---
 
@@ -78,7 +78,7 @@ flowchart LR
 
 ## Role and Responsibilities
 
-As the **creator, solo architect, and lead software engineer**, I conceived, designed, and engineered the application from scratch:
+Co-developed and engineered alongside [J2KJonas](https://github.com/J2KJonas), conceiving and building the core systems from the ground up:
 * **Engine & Game Architecture**: Designed a modular game architecture spanning 330+ Dart modules, combining Flutter UI with Flame and Bonfire 2D game loops.
 * **Real-time Networking & Bot AI**: Engineered deterministic multiplayer networking over WebSockets and built simulated bot players for seamless offline/online matchmaking.
 * **Cryptographic Architecture**: Designed and implemented hardware-backed client-side E2EE chat using X25519 ECDH and AES-GCM-256.
@@ -255,6 +255,5 @@ The full production source code for **Grow A Fish** is proprietary intellectual 
 
 To discuss architectural specifics, technical consultations, or request a guided walkthrough of the system design, feel free to reach out directly:
 
-* **Developer**: Jacob El-Omar
-* **GitHub**: [@elomarjc](https://github.com/elomarjc)
+* **Developers**: [J2KJonas](https://github.com/J2KJonas) and [elomarjc](https://github.com/elomarjc)
 * **Google Play Store**: [Grow A Fish on Google Play](https://play.google.com/store/apps/details?id=com.elomarstudio.growafish)
