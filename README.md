@@ -12,8 +12,6 @@
 
 <br/>
 
-[🎮 **Play Grow a Fish on Google Play**](https://play.google.com/store/apps/details?id=com.elomarstudio.growafish) • [🌐 **Official Website**](https://growafish.org)
-
 **A Production Cross-Platform Virtual Pet Simulator & Real-Time Multiplayer Arcade Ecosystem**
 
 </div>
