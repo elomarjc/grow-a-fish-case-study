@@ -17,6 +17,10 @@ A production cross-platform virtual pet simulator and real-time multiplayer arca
 
 **Developed by [J2KJonas](https://github.com/J2KJonas) and [elomarjc](https://github.com/elomarjc)**
 
+<p align="center">
+  <img src="assets/aquarium_pure.gif" alt="Live Aquarium Simulation Engine" width="100%" />
+</p>
+
 ---
 
 <div align="center">
@@ -64,13 +68,16 @@ flowchart LR
 ## Gameplay Showcase
 
 <div align="center">
+  <img src="assets/grow_a_fish_mobile_showcase.gif" width="300" alt="Live Mobile Gameplay Showcase" style="border-radius: 16px; margin: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
+  <br/><br/>
   <img src="assets/screenshots/01_main_gameplay.jpeg" width="340" alt="Main Aquarium Simulation" style="border-radius: 16px; margin: 10px;" />
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="assets/screenshots/04_mini_games.jpeg" width="340" alt="Multi-Genre Arcade Minigames" style="border-radius: 16px; margin: 10px;" />
   <br/><br/>
   <p>
-    <b>Left:</b> Real-time physics-driven aquarium ecosystem, feeding, and health management.<br/>
-    <b>Right:</b> Honeycomb arcade selector for Parkour, Survival RPG, Ninja, Flap, and Hook games.
+    <b>Top:</b> Live interactive mobile gameplay loop.<br/>
+    <b>Bottom Left:</b> Real-time physics-driven aquarium ecosystem, feeding, and health management.<br/>
+    <b>Bottom Right:</b> Honeycomb arcade selector for Parkour, Survival RPG, Ninja, Flap, and Hook games.
   </p>
 </div>
 
