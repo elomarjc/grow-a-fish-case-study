@@ -1,20 +1,35 @@
 # Grow A Fish
 
 <p align="center">
-  <img src="assets/icon.png" alt="Grow A Fish Icon" width="130" style="border-radius: 24px;" />
+  <img src="assets/icon.png" alt="Grow A Fish Icon" width="130" style="border-radius: 26px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);" />
 </p>
 
 <p align="center">
   <a href="https://play.google.com/store/apps/details?id=com.elomarstudio.growafish"><img src="https://img.shields.io/badge/Google_Play-Grow_A_Fish-34A853?style=for-the-badge&logo=google-play&logoColor=white" alt="Google Play" /></a>
-  <a href="https://play.google.com/store/apps/details?id=com.elomarstudio.growafish"><img src="https://img.shields.io/badge/Platform-Android_%7C_iOS-blue?style=for-the-badge&logo=android" alt="Platform" /></a>
+  <a href="https://play.google.com/store/apps/details?id=com.elomarstudio.growafish"><img src="https://img.shields.io/badge/Platform-Android_%7C_iOS-007ACC?style=for-the-badge&logo=android&logoColor=white" alt="Platform" /></a>
   <a href="https://flutter.dev"><img src="https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" /></a>
   <a href="https://flame-engine.org"><img src="https://img.shields.io/badge/Flame_Engine-2D_Gaming-FF6F00?style=for-the-badge" alt="Flame" /></a>
-  <a href="https://github.com/elomarjc"><img src="https://img.shields.io/badge/E2EE-X25519_%2B_AES--256--GCM-green?style=for-the-badge&logo=shield" alt="Security" /></a>
+  <a href="https://supabase.com"><img src="https://img.shields.io/badge/Backend-Supabase_Realtime-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" /></a>
+  <a href="https://github.com/elomarjc"><img src="https://img.shields.io/badge/Security-X25519_%2B_AES--256--GCM-10B981?style=for-the-badge" alt="Security" /></a>
 </p>
 
 A production cross-platform virtual pet simulator and real-time multiplayer arcade ecosystem published on Google Play.
 
-**Developed by [Jacob El-Omar](https://github.com/elomarjc)**
+**Architected, engineered, and shipped by [Jacob El-Omar](https://github.com/elomarjc)**
+
+---
+
+<div align="center">
+
+| 330+ Dart Modules | 7 Built-In Minigames | Hardware E2EE Chat |
+| :---: | :---: | :---: |
+| Clean layered architecture combining Flutter & Flame loops | Multi-genre arcade, parkour studio & match-3 | X25519 ECDH + AES-256-GCM via Keystore |
+
+| Zero-Lag Native Audio | Deterministic Netcode | Sub-1ms Chunk Loading |
+| :---: | :---: | :---: |
+| C++ SoLoud compiled via Dart FFI with LRU pool | Seed-synchronized PRNG over WebSockets | Binary Hive NoSQL with in-game level editor |
+
+</div>
 
 ---
 
@@ -26,38 +41,20 @@ A production cross-platform virtual pet simulator and real-time multiplayer arca
 
 ## Game Overview
 
-**Grow A Fish** is a full-featured mobile game published on Google Play that blends the relaxed progression of an aquarium virtual-pet simulator with the competitive engagement of multi-genre arcade minigames, social tank visits, and real-time multiplayer competitions.
+**Grow A Fish** blends the relaxed progression of an aquarium virtual-pet simulator with the competitive engagement of multi-genre arcade minigames, social tank visits, and real-time multiplayer competitions.
 
 ### Core Gameplay Loop
-```
-   ┌───────────────────────────────────────────────────────────┐
-   │                     1. AQUARIUM CARE                       │
-   │  Feed fish • Clean habitat • Monitor health • Cure sickness │
-   └──────────────────────────────┬──────────────────────────────┘
-                                  │ Earn XP & Growth Pips
-                                  ▼
-   ┌───────────────────────────────────────────────────────────┐
-   │                    2. EVOLUTION & BREEDING                  │
-   │   Hatch eggs • Mature from juvenile to adult • Cross-breed  │
-   └──────────────────────────────┬──────────────────────────────┘
-                                  │ Unlock Perks & Abilities
-                                  ▼
-   ┌───────────────────────────────────────────────────────────┐
-   │                    3. ARCADE & MINIGAMES                    │
-   │ Parkour • Vampire Survivor RPG • Match-3 • Ninja • Pac-Fish │
-   └──────────────────────────────┬──────────────────────────────┘
-                                  │ Coins, Pearls, Artifacts
-                                  ▼
-   ┌───────────────────────────────────────────────────────────┐
-   │                 4. COMPETITION & PROGRESSION                │
-   │  Online real-time lobbies • E2EE chat • Battle Pass seasons │
-   └──────────────────────────────┬──────────────────────────────┘
-                                  │ Decorate & Upgrade Tank
-                                  └───────────────► (Loop back)
+
+```mermaid
+flowchart LR
+    Care["1. Aquarium Care<br/><sub>Feed • Clean • Heal</sub>"] -->|Earn XP & Pips| Breed["2. Genetics & Breeding<br/><sub>Hatch • Mutate • Cross-Breed</sub>"]
+    Breed -->|Unlock Perks| Arcade["3. Arcade Minigames<br/><sub>Parkour • Survival RPG • Match-3</sub>"]
+    Arcade -->|Coins & Gems| Compete["4. Multiplayer & Seasons<br/><sub>Live Lobbies • E2EE Chat • Battle Pass</sub>"]
+    Compete -->|Decorate & Upgrade| Care
 ```
 
 ### What Makes The Game Unique
-* **Hybrid Game Genre**: Seamlessly integrates a physics-driven, organic virtual aquarium with high-tempo 2D action games (platforming, top-down survival, physics slicing, match-3 puzzles).
+* **Hybrid Game Genre**: Seamlessly integrates a physics-driven, organic virtual aquarium with high-tempo 2D action games (platforming, top-down arena survival, physics slicing, match-3 puzzles).
 * **Deterministic Real-Time Multiplayer**: Instant, low-bandwidth multiplayer lobbies powered by synchronized seed distribution and latency-resilient event dispatching.
 * **Security-First Social Layer**: Private 1-on-1 and lobby chat secured with client-side end-to-end encryption (E2EE) powered by X25519 key exchange and AES-256-GCM authenticated ciphers.
 * **Low-Latency Native C++ Audio**: Zero-lag game SFX mixing powered by `flutter_soloud` via Dart Foreign Function Interface (FFI), avoiding native Android audio thread starvation.
@@ -67,12 +64,14 @@ A production cross-platform virtual pet simulator and real-time multiplayer arca
 ## Gameplay Showcase
 
 <div align="center">
-
-| 01. Main Aquarium Simulation | 02. Multi-Genre Arcade Minigames |
-| :---: | :---: |
-| <img src="assets/screenshots/01_main_gameplay.jpeg" width="380" alt="Main Aquarium Gameplay" /> | <img src="assets/screenshots/04_mini_games.jpeg" width="380" alt="Minigames Selection" /> |
-| *Real-time physics-driven aquarium ecosystem, feeding, and health management* | *Honeycomb selector for Parkour, Survivor, Ninja, Flap, and Hook games* |
-
+  <img src="assets/screenshots/01_main_gameplay.jpeg" width="340" alt="Main Aquarium Simulation" style="border-radius: 16px; margin: 10px;" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/screenshots/04_mini_games.jpeg" width="340" alt="Multi-Genre Arcade Minigames" style="border-radius: 16px; margin: 10px;" />
+  <br/><br/>
+  <p>
+    <b>Left:</b> Real-time physics-driven aquarium ecosystem, feeding, and health management.<br/>
+    <b>Right:</b> Honeycomb arcade selector for Parkour, Survival RPG, Ninja, Flap, and Hook games.
+  </p>
 </div>
 
 ---
@@ -120,7 +119,7 @@ flowchart TD
 
     subgraph Game_Engines["2. Game Engines & Simulation"]
         FlameEngine["Flame 2D Engine"]
-        BonfireEngine["Bonfire RPG Engine (Fish Survivor)"]
+        BonfireEngine["Bonfire RPG Engine (Survival Arena)"]
         CustomPhysics["Custom Physics (Parkour, Hook, Ninja)"]
     end
 
@@ -224,7 +223,7 @@ $$
 ## Performance and Mobile Optimizations
 
 1. **Zero Garbage Collection Audio**: Audio triggers bypass the Dart VM garbage collector by leveraging C++ memory pools via FFI.
-2. **Chunked Viewport Culling**: In platformer and survivor modes, game components outside the visible screen matrix are culled from physics calculations and rendering loops.
+2. **Chunked Viewport Culling**: In platformer and survival modes, game components outside the visible screen matrix are culled from physics calculations and rendering loops.
 3. **Multi-Tier Asset Loading**: Assets are segmented into essential bundles (loaded at cold start) and dynamic on-demand bundles (loaded only when entering specific minigames).
 4. **Binary Serialization vs JSON**: Critical gameplay chunks use binary Hive buffers rather than JSON string decoding, eliminating frame drops during level transitions.
 
