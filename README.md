@@ -4,7 +4,6 @@
 
 <img src="assets/icon.png" alt="Grow A Fish Icon" width="120" height="120" style="border-radius: 24px;" />
 
-# Grow A Fish
 **A Production Cross-Platform Virtual Pet Simulator & Real-Time Multiplayer Arcade Ecosystem**
 
 [![Google Play](https://img.shields.io/badge/Google_Play-Grow_A_Fish-34A853?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.elomarstudio.growafish)
